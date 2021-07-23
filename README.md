@@ -77,7 +77,7 @@ PROJECT-1-UEMK
 
 </div>
 
-## Screenshots of Project3: point_down: 
+## Screenshots of Project3 :point_down: 
 
 <div align="center">
  

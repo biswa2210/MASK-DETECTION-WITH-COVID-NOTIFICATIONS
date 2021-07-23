@@ -1,4 +1,4 @@
-# PROJECT-3-UEMK-MASK-DETECTION-SYSTEM :star_struck: :mask: :chat:computer: :open_file_folder: :pencil2: :notebook:
+# PROJECT-3-UEMK-MASK-DETECTION-SYSTEM :star_struck: :mask: :computer: :open_file_folder: :pencil2: :notebook:
 
 [![Generic badge](https://img.shields.io/badge/advance-Python3-yellowgreen)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/deep-learning-red)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/artificial-neural%20retwork-yellow)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/convolutional%20-neural%20network-orange)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/Graphical%20-UI-brightgreen)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/python-3.6-green)](https://shields.io/) 
 

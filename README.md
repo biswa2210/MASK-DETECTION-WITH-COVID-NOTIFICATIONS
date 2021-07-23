@@ -20,9 +20,20 @@
 <div align="justified">
  
 This is my project of btech 3rd year in UEMK. This is a ‘Mask Detection System’ based on real world AI and ML applications. The software detects if people are wearing masks or not. It also has a global notification section of covid cases throughout the world. This software is made with Python. Some modules are Tkinter, Pillow, Beautifulsoup, Plyer, Opencv, Pandas, Requests, Itertools etc. A dataset has been used for training and testing data as images of people wearing masks and without masks with mask. I have selected this idea to make project remembering the present covid situation, importance of masks and also the uprising trend of using AI and ML in many real-world practices. My project ‘MASK DETECTION SYSTEM’ along with ‘COVID UPDATES’ works based on machine learning concepts. There is a GUI canvas which contains background image changing with time. There are three buttons for different functions. The title of the first button is ‘LIVE DETECTION’. Opening it we get a computer vision using web camera and a bounding rect locating the area. Coming in front of webcam we can see the result. The system detects if we are wearing masks or not. It shows accuracy percentage as per prediction and also the number of people before webcam. The system has been cross checked many times with similar things with mask but in each case, we get 99% correct result. To exit the live detection function we have to press ‘q’ on our keyboard. The next button in the main GUI is ‘COVID UPDATES’. By clicking on this we get a window where we have to write country name and type of covid case. We can select type of cases related Covid-19 like total deaths, total cases, new cases, new deaths, total recovered, all cases. Then we can to click on the show notification button to get a notification pop up in pc. We can also download json or csv format files as record. We have fetched the global updates from worldometer website. The results are updated and correct. The third button on the main GUI is EXIT which is used to exit the program.
-   
+  
 </div>
 
+<details>
+ <summary>Click Here to see Types of Covid Related Cases shown in CovidNotification section in this project. </summary>
+  - 'total_cases'
+  - 'new_cases' 
+  - 'total_deaths'
+  - 'new_deaths' 
+  - 'total_recovered'
+ 
+ </details>
+ 
+ 
 **:point_right: [click here to read Project3 Report](https://drive.google.com/file/d/1zT7ZJw0CcB2UGeP-8z8cZpm8L4CrWNyE/view)<br>
 :point_right: [click here to see Project3 PowerPoint Presentation](https://drive.google.com/file/d/1ljDyZ5c4JDhN9jQPcKWEVr83rDw1-069/view)<br>
 :point_right: [click here to view or download Project3 Demo Video](https://drive.google.com/file/d/1FAGH6d-o8Qst2lKD9RkNLqcfixS6YX0U/view)**

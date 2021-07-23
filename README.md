@@ -25,11 +25,11 @@ This is my project of btech 3rd year in UEMK. This is a ‘Mask Detection System
 
 <details>
  <summary>Click Here to see Types of Covid Related Cases shown in CovidNotification section in this project. </summary>
-  - 'total_cases'
-  - 'new_cases' 
-  - 'total_deaths'
-  - 'new_deaths' 
-  - 'total_recovered'
+  - 'total_cases'<br>
+  - 'new_cases' <r>
+  - 'total_deaths'<br>
+  - 'new_deaths' <br>
+  - 'total_recovered'<br>
  
  </details>
  

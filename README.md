@@ -103,9 +103,9 @@ PROJECT-3
 
 <a href="images/box.png"><img src="images/box.png" width="400" height= "300"></a> <a href="images/graph.png"><img src="images/graph.png" width="400" height= "300"></a>
  
-<a href="images/arc.PNG"><img src="images/arc.PNG" width="800" height= "500"></a> 
+<a href="images/arc.PNG"><img src="images/arc.PNG" width="800" height= "400"></a> 
  
- <a href="images/table.PNG"><img src="images/table.PNG" width="800" height= "350"></a>
+ <a href="images/table.PNG"><img src="images/table.PNG" width="800" height= "300"></a>
  
 </div>
 

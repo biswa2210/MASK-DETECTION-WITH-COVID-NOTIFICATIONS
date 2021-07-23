@@ -1,4 +1,9 @@
 #Importing All Required Modules
+'''
+CREATED BY BISWARUP BHATTACHARJEE
+EMAIL    : bbiswa471@gmail.com
+PHONE NO : 6290272740
+'''
 from CovidUpdates import notifyMe,getData,downdatascsv,downdatasjson
 from tkinter import *
 from tkinter import messagebox,filedialog

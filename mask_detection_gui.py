@@ -1,5 +1,10 @@
 #Import All Required Packages
 #----------------------------------------->
+'''
+CREATED BY BISWARUP BHATTACHARJEE
+EMAIL    : bbiswa471@gmail.com
+PHONE NO : 6290272740
+'''
 from plyer import notification
 import requests
 from bs4 import BeautifulSoup

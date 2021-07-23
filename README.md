@@ -15,7 +15,7 @@
 <a href="https://github.com/biswa2210/biswa2210" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg" alt="" height="30" width="40" /></a>
 </p>
 
-## About :point_down: 
+## About Project3 :point_down: 
 
 <div align="justified">
  
@@ -23,18 +23,12 @@ This is my project of btech 3rd year in UEMK. This is a ‘Mask Detection System
    
 </div>
 
-**:point_right: [click here to read Project1 Research Paper]()<br>
-:point_right: [click here to see Project1 PowerPoint Presentation]()<br>
-:point_right: [click here to view or download Project1 Demo Video]()**
-
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="pics/hr1.PNG">
-    <source src="SAMPLE OUTPUT/3SEM PROJECT.mp4" type="video/mp4">
-  </video>
-</figure>
+**:point_right: [click here to read Project3 Report](https://drive.google.com/file/d/1zT7ZJw0CcB2UGeP-8z8cZpm8L4CrWNyE/view)<br>
+:point_right: [click here to see Project3 PowerPoint Presentation](https://drive.google.com/file/d/1ljDyZ5c4JDhN9jQPcKWEVr83rDw1-069/view)<br>
+:point_right: [click here to view or download Project3 Demo Video](https://drive.google.com/file/d/1FAGH6d-o8Qst2lKD9RkNLqcfixS6YX0U/view)**
 
 
-## Purpose :point_down:
+## Purpose of Project3 :point_down:
 
 <div align="justified">
  
@@ -42,7 +36,7 @@ The main goal of our project is to implement ‘MASK DETECTION SYSTEM’ and ‘
  
 </div>
 
-## Applications :point_down:
+## Applications of Project3 :point_down:
 
 1.	In the ‘Live Detection’ part we can place our face before web-cam of our pc and then it will detect that we are wearing mask or not. The number of people will be shown. More than one person can be detected.
 2.	The prediction accuracy of with mask or without mask will be shown. We can clearly get an idea that the person is wearing mask or not. So, in this global Covid-19 pandemic situation this system can be used for safety measures.
@@ -50,7 +44,7 @@ The main goal of our project is to implement ‘MASK DETECTION SYSTEM’ and ‘
 4.	In the ‘Global Updates’ part we have to write the name of the country. We can select type of cases related Covid-19 like total deaths, total cases, new cases, new deaths, total recovered, all cases. Then we have to click on the show notification part to see the result. We can also download json or csv format files as record. The records fetched from the worldometer website is accurate.
 5.	The notification system can be also used anywhere for database analysis of Covid Cases. Students, researchers, officers or anyone can use this for database and research purpose. This will also help for statistical analysis of records.
 
-## Future Scopes :point_down:
+## Future Scopes of Project3 :point_down:
 
 1.	This ‘Face Mask Detection’ system can be deployed in any public place or densely populated areas in checking area before entry for Covid-19 safety measures. It will increase awareness of the global pandemic situation and everyone will know the importance of wearing mask.
 2.	This system will make people follow the guidelines related Covid-19 and it will also make the situation better by decreasing the number of affected people.
@@ -59,7 +53,7 @@ The main goal of our project is to implement ‘MASK DETECTION SYSTEM’ and ‘
 5.	The development ideas, AIML concepts and other knowledges, the global notification or database part will encourage students or researchers to increase their knowledges.
 
 
-## Folder Structure :point_down:
+## Folder Structure of Project3 :point_down:
 
 ```bash
 PROJECT-1-UEMK
@@ -70,20 +64,20 @@ PROJECT-1-UEMK
  
 ```                       
 
-## Making :point_down:
+## Making of Project3 :point_down:
 
 <div align="justified">
 
-Dataset-->I have downloaded external dataset of people’s images with and without masks from Kaggle. The dataset consists 1915 images of people wearing masks and 1918 images of people without wearing masks. In this dataset I have used 80% images as training data and 20% images as testing data.<br>
-Model Training--> I have created a training.py file for model training. Here I have set learning rate= 1e-4, epoch= 20 and batch size= 32 for my ease in implementation. Here are two categories of data with mask and without mask. For choosing path I have used os.listdir(path). Then I have converted image to array. I have set the size of the images as (224,224). I have used labelbinarizer for labeling and then taken the data as numpy array. Here I have splitted data in trainX, trainY, testX, testY. I have constructed the training image generator for data augmentation. I have used MobileNetV2 network for working with baseModel and headModel. Here I have kept the head of the model that will be placed on top of the base model. Here I have used AveragePooling2D, Flatten, Dense. I have used activation function relu for solving vanishing gradient problem. I have used dropout 0.5 for avoiding overfitting. After all these implementations I have compiled the model and made it to predict based on data. I have saved the model as mask_detector.model. After that I have plotted a hysteresis graph of epoch (X axis) vs loss-accuracy (Y axis) using python matplotlib library. Then I have saved the image as plot.png.<br>
-Detection--> I have created detection.py file for detection after prediction. I have downloaded a dataset and fetched it through facenet and I have fetched my trained model through masknet. Then I initialized my list of faces, their corresponding locations and the list of predictions from my face mask network using three lists faces, locs, preds. For live detection I have used opencv cv2 in python. Here I have set a frame of detection through live camera streaming. Here I have used an infinite loop for keeping the camera on. Here I have made a bounding rect where users have to place their faces. Here I have measured confidence. I have made livedetect function for live detecting faces. Then I have filtered out weak detections by ensuring the confidence is greater than the minimum confidence If it comes greater than 50% then user is wearing mask. The accuracy percentage is also calculated. Generally, the images are in BGR format of live detection. I made them in RGB format for further implementation. Then after recognition I converted them in grey scale images and also resize them in (224,224). I have kept the sizes of dataset’s images and recognized images same for perfectly comparing them. For recognizing faces a model is also created. The no. of people is also calculated. My model only makes a prediction if the number of people is greater than 0 or any people is recognized. For live detection I have used VideoStream. Using puttext function I have printed the output, number of people on the screen. After all these I have made a checking if q is pressed then the output screen will be closed using destroyAllWindows function and also stopping the livestreaming.<br>
-Covid Updates--> For Covid updates I have created CovidUpdates.py. Here I have used pandas, plyer, beautifulsoup, requests python modules. I have created notifyme function here I have called the notification. I have created list of all cases in header'countries','total_cases','new_cases','total_deaths','new_deaths','total_recovered'. I made getdata function for fetching data. Here I have used beautifulsoup module. I made a section that requests data from html.parser. I have fetched ‘tbody’ class from the code of the worldometer website. Here I have fetched td, tr accordingly. For updated data I have implemented it. I have used append, replace and strip here. I have made a checking that if the input is invalid then for all the cases it will show ‘Not Found’. I have made downdatascsv function for getting data from tbody class and downloading it in .csv format. Here I have fetched all td as ttt and made a loop. I have used downdatasjson function for downloading it in .json format. I have used pandas dataframe for downloading the data in JSON (Javascript Object Notation) and CSV (Comma Separated Values).  Then I have converted the dataframe to json or csv. Pop Notification has been created using plyer module.<br>
-Corona Updates GUI--> For the covid updates GUI I have created CoronaGlobalUpdatesGUI.py. I have imported notifyMe, getData, downdatascsv, downdatasjson from CovidUpdates.py. I have created globalUpdates function. I have set the size as 1030x300 and the co-ordinates means where the window will open in pc screen 200+80. I have used root.iconbitmap for two randomly interchanging icons. I made an IntroLabel and placed it in (x=0,y=0). I have made EntryLabel and FormatLabel also. I made the background black. I have used ImageLabel  class for GIF which seems to be a moving corona virus. I have used font size, style and color. I have placed the moving corona virus GIF using rigthliveCovid and leftliveCovid. After we have created drop down menu for choosing types of cases. Then we have converted types_of_cases_data to StringVar. We have used drop.place for setting the co-ordinates in (x=786,y=70). Then I have created shownoti function. Here I have fetched the data from https://www.worldometers.info/coronavirus/ and got the notification using checking. Here I have created createCSV and createJSON function and called them in individual buttons and created a notification to show successfully downloaded. I have placed InJson button in x=470,y=150 in the GUI and designed the button. Then I have placed InCsv button in x=620,y=150 and designed the button in GUI. I have placed the submit button in x=320,y=250 and designed it for getting notification. <br>
-Main GUI-->For the main canvas window GUI I have created mask_detection_gui.py. I have kept the sounds for clicking in a list named poklist and the background images in pokulist. For playing sound I have used lambda function. I have created the output window as well as the main GUI using root.geometry("675x500+120+120"). Here  675x500 is the size and 120 is the coordinates. For randomly changing icons I have used root.iconbitmap. Here I have created the three buttons. Here I have designed them with padx, pady, raised, background, font, font colors etc. In the first button I have called livedetect() function. I have called globalUpdates() function in the second button. In the third button I have called root.quit() function to exit the program. Here using canvas.create_window I have opened the functions of live detection and covid updates using buttons.<br>
+**Dataset**-->I have downloaded external dataset of people’s images with and without masks from Kaggle. The dataset consists 1915 images of people wearing masks and 1918 images of people without wearing masks. In this dataset I have used 80% images as training data and 20% images as testing data.<br>
+**Model Training**--> I have created a training.py file for model training. Here I have set learning rate= 1e-4, epoch= 20 and batch size= 32 for my ease in implementation. Here are two categories of data with mask and without mask. For choosing path I have used os.listdir(path). Then I have converted image to array. I have set the size of the images as (224,224). I have used labelbinarizer for labeling and then taken the data as numpy array. Here I have splitted data in trainX, trainY, testX, testY. I have constructed the training image generator for data augmentation. I have used MobileNetV2 network for working with baseModel and headModel. Here I have kept the head of the model that will be placed on top of the base model. Here I have used AveragePooling2D, Flatten, Dense. I have used activation function relu for solving vanishing gradient problem. I have used dropout 0.5 for avoiding overfitting. After all these implementations I have compiled the model and made it to predict based on data. I have saved the model as mask_detector.model. After that I have plotted a hysteresis graph of epoch (X axis) vs loss-accuracy (Y axis) using python matplotlib library. Then I have saved the image as plot.png.<br>
+**Detection**--> I have created detection.py file for detection after prediction. I have downloaded a dataset and fetched it through facenet and I have fetched my trained model through masknet. Then I initialized my list of faces, their corresponding locations and the list of predictions from my face mask network using three lists faces, locs, preds. For live detection I have used opencv cv2 in python. Here I have set a frame of detection through live camera streaming. Here I have used an infinite loop for keeping the camera on. Here I have made a bounding rect where users have to place their faces. Here I have measured confidence. I have made livedetect function for live detecting faces. Then I have filtered out weak detections by ensuring the confidence is greater than the minimum confidence If it comes greater than 50% then user is wearing mask. The accuracy percentage is also calculated. Generally, the images are in BGR format of live detection. I made them in RGB format for further implementation. Then after recognition I converted them in grey scale images and also resize them in (224,224). I have kept the sizes of dataset’s images and recognized images same for perfectly comparing them. For recognizing faces a model is also created. The no. of people is also calculated. My model only makes a prediction if the number of people is greater than 0 or any people is recognized. For live detection I have used VideoStream. Using puttext function I have printed the output, number of people on the screen. After all these I have made a checking if q is pressed then the output screen will be closed using destroyAllWindows function and also stopping the livestreaming.<br>
+**Covid Updates**--> For Covid updates I have created CovidUpdates.py. Here I have used pandas, plyer, beautifulsoup, requests python modules. I have created notifyme function here I have called the notification. I have created list of all cases in header'countries','total_cases','new_cases','total_deaths','new_deaths','total_recovered'. I made getdata function for fetching data. Here I have used beautifulsoup module. I made a section that requests data from html.parser. I have fetched ‘tbody’ class from the code of the worldometer website. Here I have fetched td, tr accordingly. For updated data I have implemented it. I have used append, replace and strip here. I have made a checking that if the input is invalid then for all the cases it will show ‘Not Found’. I have made downdatascsv function for getting data from tbody class and downloading it in .csv format. Here I have fetched all td as ttt and made a loop. I have used downdatasjson function for downloading it in .json format. I have used pandas dataframe for downloading the data in JSON (Javascript Object Notation) and CSV (Comma Separated Values).  Then I have converted the dataframe to json or csv. Pop Notification has been created using plyer module.<br>
+**Corona Updates GUI**--> For the covid updates GUI I have created CoronaGlobalUpdatesGUI.py. I have imported notifyMe, getData, downdatascsv, downdatasjson from CovidUpdates.py. I have created globalUpdates function. I have set the size as 1030x300 and the co-ordinates means where the window will open in pc screen 200+80. I have used root.iconbitmap for two randomly interchanging icons. I made an IntroLabel and placed it in (x=0,y=0). I have made EntryLabel and FormatLabel also. I made the background black. I have used ImageLabel  class for GIF which seems to be a moving corona virus. I have used font size, style and color. I have placed the moving corona virus GIF using rigthliveCovid and leftliveCovid. After we have created drop down menu for choosing types of cases. Then we have converted types_of_cases_data to StringVar. We have used drop.place for setting the co-ordinates in (x=786,y=70). Then I have created shownoti function. Here I have fetched the data from https://www.worldometers.info/coronavirus/ and got the notification using checking. Here I have created createCSV and createJSON function and called them in individual buttons and created a notification to show successfully downloaded. I have placed InJson button in x=470,y=150 in the GUI and designed the button. Then I have placed InCsv button in x=620,y=150 and designed the button in GUI. I have placed the submit button in x=320,y=250 and designed it for getting notification. <br>
+**Main GUI**-->For the main canvas window GUI I have created mask_detection_gui.py. I have kept the sounds for clicking in a list named poklist and the background images in pokulist. For playing sound I have used lambda function. I have created the output window as well as the main GUI using root.geometry("675x500+120+120"). Here  675x500 is the size and 120 is the coordinates. For randomly changing icons I have used root.iconbitmap. Here I have created the three buttons. Here I have designed them with padx, pady, raised, background, font, font colors etc. In the first button I have called livedetect() function. I have called globalUpdates() function in the second button. In the third button I have called root.quit() function to exit the program. Here using canvas.create_window I have opened the functions of live detection and covid updates using buttons.<br>
 
 </div>
 
-## Screenshots :point_down: 
+## Screenshots of Project3: point_down: 
 
 <div align="center">
  
@@ -94,7 +88,7 @@ Main GUI-->For the main canvas window GUI I have created mask_detection_gui.py. 
 <a href="images/mask4.PNG"><img src="images/mask4.PNG" width="400" height= "300"></a> <a href="images/mask5.PNG"><img src="images/mask5.PNG" width="400" height= "300"></a>
 </div>
 
-## Block Diagram of Project :point_down:
+## Diagrams of Project3 :point_down:
 
 <div align="center">
 

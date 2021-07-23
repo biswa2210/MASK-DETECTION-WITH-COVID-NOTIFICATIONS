@@ -42,13 +42,22 @@ The main goal of our project is to implement ‘MASK DETECTION SYSTEM’ and ‘
  
 </div>
 
-## Applications and Future Scopes :point_down:
+## Applications :point_down:
 
 1.	In the ‘Live Detection’ part we can place our face before web-cam of our pc and then it will detect that we are wearing mask or not. The number of people will be shown. More than one person can be detected.
 2.	The prediction accuracy of with mask or without mask will be shown. We can clearly get an idea that the person is wearing mask or not. So, in this global Covid-19 pandemic situation this system can be used for safety measures.
 3.	This system can be used in offices, schools, colleges, railway station, airport, hospitals, shopping malls and any other places to check that people are wearing masks or not.
 4.	In the ‘Global Updates’ part we have to write the name of the country. We can select type of cases related Covid-19 like total deaths, total cases, new cases, new deaths, total recovered, all cases. Then we have to click on the show notification part to see the result. We can also download json or csv format files as record. The records fetched from the worldometer website is accurate.
-5.	The notification system can be also used anywhere for database analysis of Covid Cases. Students, researchers, officers or anyone can use this for database and research purpose. This will also help for statistical analysis of records. 
+5.	The notification system can be also used anywhere for database analysis of Covid Cases. Students, researchers, officers or anyone can use this for database and research purpose. This will also help for statistical analysis of records.
+
+## Future Scopes :point_down:
+
+1.	This ‘Face Mask Detection’ system can be deployed in any public place or densely populated areas in checking area before entry for Covid-19 safety measures. It will increase awareness of the global pandemic situation and everyone will know the importance of wearing mask.
+2.	This system will make people follow the guidelines related Covid-19 and it will also make the situation better by decreasing the number of affected people.
+3.	Many important exams which are getting postponed affecting students’ careers. In future using this system many exams and other important tasks can be conducted avoiding any losses.
+4.	The global notification idea can be added in other systems and shown in public places through tv or computer to keep people updated and make them alert for their health.
+5.	The development ideas, AIML concepts and other knowledges, the global notification or database part will encourage students or researchers to increase their knowledges.
+
 
 ## Folder Structure :point_down:
 

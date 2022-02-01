@@ -1,10 +1,5 @@
 #Import All Required Packages
 #----------------------------------------->
-'''
-CREATED BY BISWARUP BHATTACHARJEE
-EMAIL    : bbiswa471@gmail.com
-PHONE NO : 6290272740
-'''
 from plyer import notification
 import requests
 from bs4 import BeautifulSoup
@@ -15,6 +10,8 @@ from winsound import *
 import random
 from Detection import livedetect
 from CoronaGlobalUpdatessGUI import globalUpdates
+from detectMask_image import imageDetection
+
 poklist=["pok.wav","pok2.wav"]
 pokulist=["covidbg1.jpg","covidbg2.jpg","covidbg3.jpg","covidbg.png"]
 
@@ -46,10 +43,13 @@ root.iconbitmap(random.choice(pkico))
 #Button4---->Exit
 b1=Button(root,text="LIVE\nDETECTION",font=("BankGothic Md BT",18,"bold"),fg="white",pady=7,padx=5,relief=RAISED,bg="green",activeforeground='white',command=lambda:[clicked(),livedetect()])
 #place the b1 button
-b1_placing=canvas.create_window(500,130,window=b1)
+b1_placing=canvas.create_window(500,80,window=b1)
 b2=Button(root,text="GLOBAL\nUPDATES",font=("BankGothic Md BT",18,"bold"),fg="black",padx=20,pady=7,relief=RAISED,bg="green",activeforeground='white',command=lambda:[clicked(),globalUpdates()])
 #place the b2 button
-b2_placing=canvas.create_window(500,300,window=b2)
+b2_placing=canvas.create_window(500,240,window=b2)
+b4=Button(root,text="IMAGE\nDETECTION",font=("BankGothic Md BT",18,"bold"),fg="white",padx=7,pady=5,relief=RAISED,bg="green",activeforeground='white',command=lambda:[clicked(),imageDetection()])
+#place the b2 button
+b4_placing=canvas.create_window(500,400,window=b4)
 b3=Button(root,text=" EXIT ",font=("BankGothic Md BT",25,"bold"),fg="black",padx=31,pady=3,relief=SUNKEN,bg="red",command=lambda:[clicked(),root.quit()])
 #place the b4 button
 b3_placing=canvas.create_window(120,50,window=b3)

@@ -14,12 +14,13 @@ import pyttsx3
 engine = pyttsx3.init()
 def imageDetection():
      print("[INFO]Image Importing Begins...")
-     f_types = [('Jpg Files', '*.jpg')]
+     f_types = [('Jpg Files', '*.jpg'),('Png Files','*.png'),("Jpeg Files","*.jpeg")]
      filename = filedialog.askopenfilename(filetypes=f_types)
      print("[INFO]Image Importing Ends...")
-     engine.say('Detecting Start')
-     engine.runAndWait()
-     mask_check(filename)
+     if len(filename)!=0:
+         engine.say('Detecting Start')
+         engine.runAndWait()
+         mask_check(filename)
 
 def mask_check(image):
     # load our serialized face detector model from disk
@@ -46,7 +47,7 @@ def mask_check(image):
     print("[INFO] computing face detections...")
     net.setInput(blob)
     detections = net.forward()
-
+    faces=[]
     # loop over the detections
     for i in range(0, detections.shape[2]):
         # extract the confidence (i.e., probability) associated with
@@ -74,7 +75,7 @@ def mask_check(image):
             face = img_to_array(face)
             face = preprocess_input(face)
             face = np.expand_dims(face, axis=0)
-
+            faces.append(face)
             # pass the face through the model to determine if the face
             # has a mask or not
             (mask, withoutMask) = model.predict(face)[0]
@@ -92,11 +93,13 @@ def mask_check(image):
             cv2.putText(image, label, (startX, startY - 10),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.45, color, 2)
             cv2.rectangle(image, (startX, startY), (endX, endY), color, 2)
+
     engine.say('Finish Recognizing')
-    engine.say('Output')
+    engine.say('Total Number of faces'+str(len(faces)))
+    print("Total Faces : "+str(len(faces)))
     engine.runAndWait()
     # show the output image
-    cv2.imshow("Output", image)
+    cv2.imshow("Total Number of faces : "+str(len(faces)), image)
     cv2.waitKey(0)
 
 

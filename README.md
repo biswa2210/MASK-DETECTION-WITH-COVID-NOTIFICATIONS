@@ -136,5 +136,5 @@ This is created for the image detection function. So that clicking on the button
  <a href="images/table.PNG"><img src="images/table.PNG" width="800" height= "300"></a>
  
 </div>
-
+ 
 

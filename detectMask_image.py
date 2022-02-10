@@ -48,6 +48,8 @@ def mask_check(image):
     net.setInput(blob)
     detections = net.forward()
     faces=[]
+    maskCount=0
+    withoutmaskCount=0
     # loop over the detections
     for i in range(0, detections.shape[2]):
         # extract the confidence (i.e., probability) associated with
@@ -82,7 +84,14 @@ def mask_check(image):
 
             # determine the class label and color we'll use to draw
             # the bounding box and text
-            label = "Mask" if mask > withoutMask else "No Mask"
+            if (mask>withoutMask) :
+                maskCount=maskCount+1;
+                label="Mask"
+            else :
+                withoutmaskCount=withoutmaskCount+1;
+                label="No Mask"
+
+            #label = "Mask" if mask > withoutMask else "No Mask"
             color = (0, 255, 0) if label == "Mask" else (0, 0, 255)
 
             # include the probability in the label
@@ -97,9 +106,13 @@ def mask_check(image):
     engine.say('Finish Recognizing')
     engine.say('Total Number of faces'+str(len(faces)))
     print("Total Faces : "+str(len(faces)))
+    engine.say('Mask Detected '+str(maskCount))
+    engine.say('Without Mask Detected'+str(withoutmaskCount))
+    print(maskCount)
+    print(withoutmaskCount)
     engine.runAndWait()
     # show the output image
-    cv2.imshow("Total Number of faces : "+str(len(faces)), image)
+    cv2.imshow("Total Number of faces : "+str(len(faces)) +" , mask = "+str(maskCount)+" , withoutMask = "+str(withoutmaskCount), image)
     cv2.waitKey(0)
 
 

@@ -34,9 +34,9 @@ This is a ‘Mask Detection System’ based on real world AI and ML applications
  </details>
  
  
-**:point_right: [click here to read Project Report](https://drive.google.com/file/d/17Ldl95sThpq8U6zVBPEsbwh3CeSLlGuz/view)<br>
-:point_right: [click here to see Project PowerPoint Presentation](https://drive.google.com/file/d/1ljDyZ5c4JDhN9jQPcKWEVr83rDw1-069/view)<br>
-:point_right: [click here to view or download Project Demo Video](https://drive.google.com/file/d/1FAGH6d-o8Qst2lKD9RkNLqcfixS6YX0U/view)**
+**:point_right: [click here to read Project Report](https://drive.google.com/file/d/1hMdAJeS37-HpEpMFpqH3xI1a5vXFUuG1/view?usp=sharing)<br>
+:point_right: [click here to see Project PowerPoint Presentation](https://drive.google.com/file/d/1TVcrcimHHs0RM-GMAkX0TthHizkYITZp/view)<br>
+:point_right: [click here to view or download Project Demo Video]()**
 
 
 ## Purpose of MASK-DETECTION-WITH-COVID-NOTIFICATIONS :point_down:

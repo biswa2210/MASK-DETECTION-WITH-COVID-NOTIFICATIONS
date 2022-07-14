@@ -39,7 +39,11 @@ This is a ‘Mask Detection System’ based on real world AI and ML applications
 
 ## CREDITS
 
+## Mask Detection System with Covid Updates under Prof. Sudipto Kumar Mondal of UEMK :point_right: <a href="https://drive.google.com/file/d/1hMdAJeS37-HpEpMFpqH3xI1a5vXFUuG1/view">Report</a>
 
+## CONFERENCE PAPER PUBLISHED ON SPRINGER'S COMPUTATIONAL INTELLIGENCE AND PATTERN RECOGNITION 2022 ON Deep Learning Based Facial Mask Detection Using Mobilenetv2 :point_down:
+
+**https://link.springer.com/chapter/10.1007/978-981-19-3089-8_8**
 
 **:point_right: [click here to read Project Report](https://drive.google.com/file/d/1hMdAJeS37-HpEpMFpqH3xI1a5vXFUuG1/view?usp=sharing)<br>
 :point_right: [click here to see Project PowerPoint Presentation](https://drive.google.com/file/d/1TVcrcimHHs0RM-GMAkX0TthHizkYITZp/view)<br>

@@ -33,7 +33,14 @@ This is a ‘Mask Detection System’ based on real world AI and ML applications
  
  </details>
  
- 
+ ## MASK DETECTION SYSTEM DEMO VIDEO: :point_right: <a href="https://www.youtube.com/watch?v=qXZ09CHweTo&list=PL0lbDlMJ1h4jrRuH-A6njkMA3iYmRhxIO&index=4">Click here to watch</a>
+
+## AIML-DL PLAYLIST: :point_right: <a href="https://www.youtube.com/watch?v=K0AAxrbzLFg&list=PL0lbDlMJ1h4jrRuH-A6njkMA3iYmRhxIO">Click here to watch</a>
+
+## CREDITS
+
+
+
 **:point_right: [click here to read Project Report](https://drive.google.com/file/d/1hMdAJeS37-HpEpMFpqH3xI1a5vXFUuG1/view?usp=sharing)<br>
 :point_right: [click here to see Project PowerPoint Presentation](https://drive.google.com/file/d/1TVcrcimHHs0RM-GMAkX0TthHizkYITZp/view)<br>
 :point_right: [click here to view or download Project Demo Video](https://drive.google.com/file/d/17XgQbac67pldqXRNeF50OmqL2wEDpGKX/view)**
